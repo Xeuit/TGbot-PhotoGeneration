@@ -125,7 +125,6 @@ style_names = {
 
 
 def get_time_string(minutes):
-    """Функция для получения правильного склонения слова 'минута'."""
     if minutes % 10 == 1 and minutes % 100 != 11:
         return f"{minutes} минута"
     elif 2 <= minutes % 10 <= 4 and not (12 <= minutes % 100 <= 14):
@@ -374,9 +373,6 @@ def handle_style_selection(call):
         else:
             generate_with_api(api1, model_id1, 1)
             generate_with_api(api2, model_id2, 1)
-
-    if not image_files:
-        bot.send_message(call.message.chat.id, "Не удалось сгенерировать изображения.")
         return
 
     for i in range(0, len(image_files), 10):
