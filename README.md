@@ -5,7 +5,10 @@ To get started, you'll need to install the required libraries. Run the following
 ```
 pip install requests
 ```
-
+and
+```
+pip install telebot
+```
 Next, you'll need to obtain your API key and secret key. To do this, please register on the following site and create a new key pair in the API tab on the left:
 
 
